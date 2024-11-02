@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rick and Morty Episode Image Feed
+
+A Next.js project that implements an image feed using the [Rick and Morty public API](https://rickandmortyapi.com/documentation/#rest).
+
+## Features
+
+- **Episode List**: Displays a list of episodes in a side navigation panel using `/api/episode` from the Rick and Morty API.
+- **Character Display**: Shows the first page of characters using `/api/character` on initial load.
+- **Episode Selection**:
+  - Highlights the selected episode in the side navigation panel.
+  - Updates the main view to display characters from the selected episode.
+  - Automatically unhighlights the previous episode when a new one is selected.
+  - Reverts to the initial character view when no episode is selected.
+
+## Screenshots
+
+### Initial Load
+
+![Screenshot-1](./public/homepage.png)
+
+### Episode Selected
+
+![Screenshot-2](./public/episode-page.png)
+
+## Technology Stack
+
+- **Framework**: Next.js 15, React.js, TypeScript
+- **Styling**: Tailwind CSS, Shadcn UI
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js 18+
+- npm
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone git@github.com:Harshal-7/cogitix-assignment.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd cogitix-assignment
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Running the Application
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Open http://localhost:3000 in your browser to view the app.
+
+5. Build for Production
+
+   To create a production build, run:
+
+   ```bash
+   npm run build
+   ```
